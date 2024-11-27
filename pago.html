@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Pago BEST STYLE</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="pago.css">
+    <script>
+        // Función para redirigir al carrito
+        function regresarCarrito() {
+            window.location.href = 'carrito.html';  // Redirige al carrito
+        }
+    </script>
+</head>
+<body>
+    <H1 class="header">BEST STYLE</H1>
+
+    <div class="container">
+        <h1>Pantalla de Pago</h1>
+        <form class="payment-form">
+            <div class="form-group">
+                <label for="card-number">Número de tarjeta</label>
+                <input type="text" id="card-number" name="card-number" placeholder="#### #### #### ####" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="###" required>
+            </div>
+            <div class="form-group">
+                <label for="card-name">Nombre del titular de la tarjeta</label>
+                <input type="text" id="card-name" name="card-name" placeholder="Nombre completo" required>
+            </div>
+            <button type="submit" class="submit-button">Realizar pago</button>
+        </form>
+
+        <!-- Botón "Regresar" que redirige al carrito -->
+        <button type="button" class="back-button" onclick="regresarCarrito()">Regresar al carrito</button>
+    </div>
+</body>
+</html>
